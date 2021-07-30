@@ -24,7 +24,8 @@ final TextStyle primarystyle = TextStyle(
 final TextStyle styleboldg = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.bold,
-  color: Color.fromARGB(255, 41, 119, 44),
+  color: Color.fromARGB(255, 82, 103, 104),
+
 );
 
 final TextStyle styleboldb = TextStyle(

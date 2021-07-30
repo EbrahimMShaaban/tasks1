@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+
 class Dividerline extends StatelessWidget {
   double? rightend;
   double? liftend;
-  Dividerline({this.liftend,this.rightend});
+
+  Dividerline({this.liftend, this.rightend});
 
   @override
   Widget build(BuildContext context) {

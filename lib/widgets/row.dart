@@ -51,7 +51,7 @@ class _RowWidState extends State<RowWid> {
           icon: Image.asset(
             "assets/2.png",
             width: 39,
-            color: Color.fromARGB(255, 41, 119, 44),
+            color: Color.fromARGB(255, 82, 103, 104),
           ),
         ),
         Text('2 June 2020', style: styleboldb),

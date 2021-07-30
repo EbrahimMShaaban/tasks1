@@ -13,25 +13,16 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   bool? val = false;
 
-  final GlobalKey<ScaffoldState>? _scaffoldKey = GlobalKey<ScaffoldState>();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // key: _scaffoldKey,
       backgroundColor: Colors.white,
       appBar: AppBar(
-        key: _scaffoldKey,
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
         backgroundColor: Colors.white,
-        actions: [
-          IconButton(
-            icon: Icon(
-              Icons.menu,
-              size: 40,
-              color: Colors.black,
-            ),
-            onPressed: () => _scaffoldKey!.currentState!.openDrawer(),
-          ),
-        ],
         leading: Icon(
           Icons.arrow_back,
           color: Colors.black,
@@ -76,9 +67,15 @@ class _HomeState extends State<Home> {
                   'Invited Employees',
                   style: primarystyle,
                 ),
-                CircleAvatar(
-                  backgroundImage: NetworkImage(
-                      "https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea.jpg"),
+                Container(
+                  height: 50,
+                  width: 50,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/3.png"),
+                          fit: BoxFit.contain),
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(30)),
                 ),
                 Dividerline(
                   rightend: 10,
