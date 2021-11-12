@@ -13,7 +13,7 @@ class Dividerline extends StatelessWidget {
       height: 30,
       endIndent: rightend,
       indent: liftend,
-      thickness: 0.5,
+      thickness: .5,
     );
   }
 }
